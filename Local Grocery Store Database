@@ -1,0 +1,23 @@
+-- created a local grocery store database
+
+CREATE TABLE grocery_store (id integer primary key, name text, price integer, items_sold integer, aisle_number integer);
+INSERT into grocery_store VALUES (1, "coffee", 12, 30, 8);
+INSERT into grocery_store VALUES (2, "soda", 4, 31, 8);
+INSERT into grocery_store VALUES (3, "lettuce", 2, 6, 1);
+INSERT into grocery_store VALUES (4, "popcorn", 3, 34, 7);
+INSERT into grocery_store VALUES (5, "milk", 2, 53, 10);
+INSERT into grocery_store VALUES (6, "eggs", 2, 35, 10);
+INSERT into grocery_store VALUES (7, "strawberries", 2, 12,1);
+INSERT into grocery_store VALUES (8, "sugar", 1, 3, 3);
+INSERT into grocery_store VALUES (9, "turkey", 5, 8, 1);
+INSERT into grocery_store VALUES (10, "carrots", 2, 4, 1);
+INSERT into grocery_store VALUES (11, "buns", 2, 31, 2);
+INSERT into grocery_store VALUES (12, "hot dogs", 5, 6, 3);
+INSERT into grocery_store VALUES (13, "ham", 5, 1, 3);
+INSERT into grocery_store VALUES (14, "broccoli", 1, 34, 1);
+INSERT into grocery_store VALUES (15, "green beans", 2, 7, 1);
+
+--organized database by price
+
+SELECT * FROM grocery_store
+ORDER BY price
